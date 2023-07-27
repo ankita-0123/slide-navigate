@@ -1,0 +1,47 @@
+/* Modal.css */
+.modal {
+  position: fixed;
+  top: 70px;
+  right: 280px;
+}
+
+.menu-icon {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 0px solid white;
+  padding: 0px;
+  position: absolute;
+  bottom: 60px;
+  right: 0px;
+  top:80px;
+}
+
+.menu button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #efebeb;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+.menu button:last-child {
+  background-color: #f44336;
+  color: #fff;
+}

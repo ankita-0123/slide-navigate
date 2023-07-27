@@ -1,0 +1,356 @@
+/* Style.css */
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.home-page h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.level-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.level-buttons button {
+  position: relative; /* Add relative positioning to the buttons */
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.level-buttons button:disabled {
+  background-color: #f2f2f2;
+  cursor: not-allowed;
+}
+
+.level-buttons button:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -10px; /* Adjust the position of the dotted line */
+  width: 10px;
+  height: 2px;
+  background-color: #ccc; /* Color of the dotted line */
+}
+
+.level-buttons button:first-child:before {
+  display: none; /* Hide the dotted line before the first button */
+}
+
+.level-buttons button.active {
+  background-color: #FF9A8B; /* Light pink, active level color */
+}
+
+.level-buttons button.active:before {
+  background-color: #FF9A8B; /* Dotted line color for active level */
+  content: '\2022'; /* Unicode for a bullet point (•) to represent the active level */
+  font-size: 24px;
+  top: 44%; /* Adjust the position of the bullet point */
+  left: -8px; /* Adjust the position of the bullet point */
+  line-height: 0; /* Remove any extra line height */
+}
+/* Style.css */
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.home-page h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.level-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.level-buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.level-buttons button:disabled {
+  background-color: #f2f2f2;
+  cursor: not-allowed;
+}
+
+.level-buttons button:first-child {
+  background-color: #FF9A8B; /* Light pink, active level 1 color */
+}
+
+.level-buttons button:nth-child(2) {
+  background-color: #9FE6A0; /* Light green, active level 2 color */
+}
+
+/* Add more colors for other active levels if needed */
+/* Style.css */
+.slide-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  height: 400px;
+  width: 100%;
+}
+
+.slide-1 {
+  background-color: #FF9A8B; /* Light pink */
+  font-family:'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 40px
+}
+.slide-2 {
+  background-color: #f477c4; /* Light green */
+}
+.slide-3 {
+  background-color: #8fd975; /* Light green */
+}
+.slide-4 {
+  background-color: #ac8de6; /* Light green */
+}
+
+.slide-container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.slide-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.slide-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #5148fa;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.slide-buttons button:disabled {
+  background-color: #f2f2f2;
+  cursor: not-allowed;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.menu button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.menu button:last-child {
+  background-color: #f44336;
+  color: #fff;
+}
+/* Style.css */
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.home-page h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.level-buttons {
+  display: flex;
+  flex-wrap: wrap; /* Allow the buttons to wrap to a new row */
+  justify-content: center;
+}
+
+.level-buttons button {
+  position: relative;
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.level-buttons button:disabled {
+  background-color: #f2f2f2;
+  cursor: not-allowed;
+}
+
+.level-buttons button:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  width: 10px;
+  height: 2px;
+  background-color: #ccc;
+}
+
+.level-buttons button:first-child:before {
+  display: none;
+}
+
+.level-buttons button.active {
+  background-color: #FF9A8B;
+}
+
+.level-buttons button.active:before {
+  background-color: #FF9A8B;
+  content: '\2022';
+  font-size: 24px;
+  top: 44%;
+  left: -8px;
+  line-height: 0;
+}
+
+/* Custom styles for levels 1 to 5 */
+
+.level-buttons button:nth-child(1) {
+  background-color: #FF9A8B; /* Light pink, level 1 color */
+}
+
+.level-buttons button:nth-child(2) {
+  background-color: #9FE6A0; /* Light green, level 2 color */
+}
+
+.level-buttons button:nth-child(3) {
+  background-color: #9BB6FF; /* Light blue, level 3 color */
+}
+
+.level-buttons button:nth-child(4) {
+  background-color: #FFD06B; /* Light yellow, level 4 color */
+}
+
+.level-buttons button:nth-child(5) {
+  background-color: #E79AFF; /* Light purple, level 5 color */
+}
+/* Style.css */
+
+.slide-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.slide-page h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.slide-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slide {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.slide-content {
+  font-size: 18px;
+}
+
+.slide-buttons {
+  display: flex;
+  justify-content: center;
+  background-color: #E79AFF;
+}
+
+.slide-buttons button {
+  margin: 0 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.slide-buttons button:hover {
+  background-color: #f2f2f2;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 5px;
+  position: absolute;
+  bottom: 1px;
+  right: 0;
+}
+
+.menu button {
+  margin: 2px;
+  padding: 5px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.menu button:last-child {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.menu button:hover {
+  background-color: #f2f2f2;
+}
+
